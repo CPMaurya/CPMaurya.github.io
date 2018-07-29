@@ -1,0 +1,177 @@
+// Port of the awesome xetex resume template by Debarghya Das
+// Jade Template
+// Author: Ankit Sultana
+// Original Repo: https://github.com/bk2dcradle/jade-resume
+// LICENSE: GNU GPL v3
+
+doctype html
+html(lang="en")
+    head
+        title= 'Jade Resume'
+        link(href="includes/css/style.css", rel="stylesheet")
+        // Link to the corresponding fonts
+        // Font: Raleway | https://github.com/mrkelly/lato.git
+        link(href="includes/fonts/raleway/raleway.css" rel="stylesheet")
+        // Font: Lato | https://github.com/softwaymedical/raleway.git
+        link(href="includes/fonts/lato/css/lato.min.css" rel="stylesheet")
+    body
+        #update-status
+            p.
+                Last updated on July 29, 2018
+        .heading
+            h1 #[span #{firstName}] #{lastName}
+            h3  mauryacp96@gmail.com | +91 7297821655
+        hr
+        ///h OBJECTIVE
+        ///p Render best of my services for a challenging job opportunity, which provide me demanding
+        ///p technological responsibilities, important for the growth of company as well as for me.
+        .content
+            ////////////////////////
+            // Left Column begins //
+            ////////////////////////
+            .left-column
+                ///////// Begin Section: Education /////////
+                h1 Education
+                // Begin Subsection
+                h2 SKIT JAIPUR
+                h3 B.TECH in Computer Science
+                h4 AUG 2015 - MAY 2019
+                h4 Aggregate (Till 6th sem): 67.27%
+                h4 Jaipur, Rajasthan, India
+
+                // Space between two subsections
+                br
+                // Begin Subsection
+                h2 SIC Allahabad
+                h3 10th Percentage - 80%
+                h4 12th Percentage - 80%
+                h4 Allahabad, Uttar Pradesh
+
+                br
+                ///////// Begin Section: Links /////////
+                h1 Links
+                // List follows
+                ul.nostyle
+                    - for (var i = 0; i < links.length; i++)
+                        li #{links[i][0]}://#[a(href="#{links[i][1]}") #{links[i][2]}]
+
+                ///////// Begin Section: Skills /////////
+                h1 Skills
+                // Begin Subsection
+                h2 Programming
+                // Use no-overlap if inline list overlaps with any element
+                // above it
+                br
+                h4.no-overlap WORKED IN
+                // Note: Use span with li elements so the bullets can be closer
+                //       than the browser default value. Refer:
+                //       http://stackoverflow.com/questions/4373046/css-control-space-between-bullet-and-li
+                ul.inline
+                    - for (var i = 0; i < languagesStrong.length; i++)
+                        li
+                            span= languagesStrong[i]
+
+                .clearfix
+
+                h4.no-overlap FAMILIAR
+                ul.inline
+                    - for (var i = 0; i < languagesFamiliar.length; i++)
+                        li
+                            span= languagesFamiliar[i]
+
+                .clearfix
+                h4.no-overlap FRAMEWORKS
+                ul.inline
+                    - for (var i = 0; i < languagesframework.length; i++)
+                        li
+                            span= languagesframework[i]
+
+                .clearfix
+                h4.no-overlap TOOLS
+                ul.inline
+                    - for (var i = 0; i < languagestool.length; i++)
+                        li
+                            span= languagestool[i]
+
+                .clearfix
+                ///////// Begin Section: Coursework /////////
+                h1 Coursework
+                br
+                // Begin Subsection
+                ///h2 Graduate
+                ///- for (var i = 0; i <graduateCourses.length; i++)
+                    ///p= graduateCourses[i]
+
+                // Begin Subsection
+                ///h2 Undergraduate
+                - for (var i = 0; i < undergradCourses.length; i++)
+                    p= undergradCourses[i]
+                    - if (i == 4)
+                        ///p.italic.bold (Research Asst. & Teaching Asst 2x)
+
+
+            ////////////////////////
+            /// Left Column ends ///
+            ////////////////////////
+            // Right Column Begins//
+            ////////////////////////
+            .right-column
+                ///////// Begin Section: Experience /////////
+                h1 Experience
+                // Begin Subsection
+                h2 DZONE | #[span Software Training & Service Provider]
+                h3 Summar Training | May 2018 - July 2018
+
+                // Space between subsections, in case if they are too close
+
+                // Begin Subsection
+                ///h2 Coursera | #[span KPCB Fellow + Software Engineering Intern]
+                ///h3 June 2014 - Sep 2014 | Mountain View, CA
+                ///ul
+                   /// li 52 out of 2500 applicants chosen to be a #[a(href="#") KPCB] Fellow 2014
+                   /// li Led and shipped Yoda - the admin interface for the new Phoenix platform
+                    ///li.
+                      ///  Full-stack developer - Wrote and reviewed code for JS
+
+                .clearfix
+                ///////// Begin Section: Research /////////
+                h1 Project
+                h2 Text Editer| #[span Simple Notepad | Python]
+                h3 https://github.com/CPMaurya/TextEditor-Notepad-
+                p.
+                    — This is a simple text editor like Microsoft Windows Notepad.
+                    A basic text-editing program which enables
+                    computer users to create documents.
+                br
+                h2 Download Manager| #[span Python]
+                h3 https://github.com/CPMaurya/Python-Download-manager-
+                p.
+                    —Using some python library and create terminal based
+                    download manager with show progress bar.
+
+                ///////// Begin Section: Awards /////////
+                h1 EXTRA CURRICULAR ACTIVITIES
+                li Member of “Tech Innova Club”.
+                li Attended one day workshop on “WEB DEVELOPMENT  & PYTHON3”.
+
+
+                h1 STRENGTH
+                li High Grasping Power
+                li Optimistic.
+                li Leadership qualities.
+
+
+                ///////// Begin Section: Publications /////////
+                ///h1 Publications
+                ///ol.publications-list
+                   /// li.
+                       /// #[a(href="#") A. Jain], #[a(href="#") D.Das] and #[a(href="#") A.Saxena]. Planit: A crowdsourcing approach
+                        ///for learning to plan paths from large scale preference
+                        ///feedback. #[span.italic Tech Report, ICRA, in press]
+                    ///li.
+                        ///S. TIlsen, D.Das, and B.McKee. Real-time articulatory
+                        ///biofeedback with electromagnetic articulography.
+                        ///#[span.italic Linguistics Vanguard, in press.]
+                ////////////////////////
+                /// Right Column Ends //
+                ////////////////////////
