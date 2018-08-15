@@ -80,7 +80,3 @@ Non Bulleted with each element in one line     | `ul.nostyle`
   * `br.two`
   * `br.three`
 
-
-### License
-
-[GNU GPL v3](https://github.com/bk2dcradle/jade-resume/blob/master/LICENSE) (c) [Ankit Sultana](https://twitter.com/AnkitSultana) 2016
