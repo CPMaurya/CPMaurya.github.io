@@ -3,7 +3,7 @@
     "lastName": "Prakash",
     "languagesStrong": ["Python", "C"],
     "languagesFamiliar": ["C++","MySQL"],
-    "languagesframework": ["Django","Bootstrap"],
+    "languagesframework": ["Django"],
     "languagestool": ["Git","Sublime-Text","Terminal"],
     "graduateCourses": ["Object Oriented Programming",
                         "Data Structures and Algorithms",
