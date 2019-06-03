@@ -17,7 +17,7 @@ A simple three step installation process:
 **Note:** Use `--depth 1` to avoid having to download unnecessary commits.
 
 ```
-git clone https://github.com/bk2dcradle/jade-resume.git --depth 1
+git clone https://github.com/CPMaurya/CPMaurya.github.io.git
 ```
 
 * Inside the `jade-resume` directory, run:
