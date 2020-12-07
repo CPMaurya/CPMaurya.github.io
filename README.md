@@ -1,12 +1,11 @@
 # jade-resume
 
-### [Sample Resume](https://ankitsultana.com/jade-resume/deedy-resume.pdf)
 
-### [Web Link](https://ankitsultana.com/jade-resume)
+### [Web Link](https://cpmaurya.github.io/)
 
 This is [deedy](https://github.com/deedy/Deedy-Resume)'s awesome resume template, but without any **TeX**.
 
-You can use [jade](http://jade-lang.com) to edit the content to your heart's delight. There is an `index.jade` file that is initially filled with deedy's data, so you can compare [this](https://ankitsultana.com/jade-resume/deedy-resume.pdf) and the [original](https://raw.githubusercontent.com/deedydas/Deedy-Resume/master/OpenFonts/sample-image.png) one written in Tex.
+You can use [jade](http://jade-lang.com) to edit the content to your heart's delight. There is an `index.jade` file that is initially filled with deedy's data, so you can compare [this](https://cpmaurya.github.io/) and the [original](https://cpmaurya.github.io/) one written in Tex.
 
 ### Installation
 
