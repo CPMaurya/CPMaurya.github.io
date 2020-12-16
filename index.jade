@@ -17,7 +17,7 @@ html(lang="en")
     body
         #update-status
             p.
-                Last updated on Jan 26, 2020
+                Last updated on Nov 30, 2020
 
         .heading
             h1 #{firstName} #{lastName}
@@ -37,25 +37,22 @@ html(lang="en")
                 h1 Education
                 // Begin Subsection
                 br
-                h2 SKIT JAIPUR
-                h3 B.Tech Computer Science
+                h2 B.Tech | Computer Science
+                h3 SKIT JAIPUR | RTU
                 h4 AUG 2015 - MAY 2019
-                h4 Aggregate - 68.69%
                 h4 Jaipur, Rajasthan
 
                 // Space between two subsections
                 br
                 // Begin Subsection
-                h2 SIC Allahabad
-                h3 Intermediate (12th) | Maths
+                h2 Intermediate (12th) | Maths
+                h3 SIC Allahabad | UP Board
                 h4 JULY 2013 - MAY 2014
-                h4 Aggregate - 80%
                 h4 Allahabad, Uttar Pradesh
                 br
-                h2 SIC Allahabad
-                h3 High School (10th) | Science
+                h2 High School (10th) | Science
+                h3 SIC Allahabad | UP Board
                 h4 JULY 2011 - MAY 2012
-                h4 Aggregate - 80%
                 h4 Allahabad, Uttar Pradesh
                 ///////// Begin Section: Links /////////
                 h1 Links
@@ -76,7 +73,7 @@ html(lang="en")
                 // Note: Use span with li elements so the bullets can be closer
                 //       than the browser default value. Refer:
                 //       http://stackoverflow.com/questions/4373046/css-control-space-between-bullet-and-li
-                ul.inline
+                ul
                     - for (var i = 0; i < languagesStrong.length; i++)
                         li
                             span= languagesStrong[i]
@@ -84,7 +81,7 @@ html(lang="en")
                 .clearfix
                 br
                 h4.no-overlap Familiar
-                ul.inline
+                ul
                     - for (var i = 0; i < languagesFamiliar.length; i++)
                         li
                             span= languagesFamiliar[i]
@@ -92,7 +89,7 @@ html(lang="en")
                 .clearfix
                 br
                 h4.no-overlap Frameworks
-                ul.inline
+                ul
                     - for (var i = 0; i < languagesframework.length; i++)
                         li
                             span= languagesframework[i]
@@ -100,7 +97,7 @@ html(lang="en")
                 .clearfix
                 br
                 h4.no-overlap Tools
-                ul.inline
+                ul
                     - for (var i = 0; i < languagestool.length; i++)
                         li
                             span= languagestool[i]
@@ -152,15 +149,6 @@ html(lang="en")
 
                 // Space between subsections, in case if they are too close
 
-                // Begin Subsection
-                ///h2 Coursera | #[span KPCB Fellow + Software Engineering Intern]
-                ///h3 June 2014 - Sep 2014 | Mountain View, CA
-                ///ul
-                   /// li 52 out of 2500 applicants chosen to be a #[a(href="#") KPCB] Fellow 2014
-                   /// li Led and shipped Yoda - the admin interface for the new Phoenix platform
-                    ///li.
-                      ///  Full-stack developer - Wrote and reviewed code for JS
-
                 .clearfix
                 ///////// Begin Section: Research /////////
                 h1 Projects
@@ -182,12 +170,6 @@ html(lang="en")
                 li  Unlike most traditional chat apps.
                 li  This real-time chat application does not save your chat messages in the database before passing it to other client.
                 br
-                //- h2 Child And Animal Tracking System | #[span PHP & ANDROID]
-                //- h3 Link :- https://github.com/GopalSevaks/RajHack3
-                //- h3 Dec 2017 - Dec 2017 | Rajasthan Hackathon 3.0 | Team of 4
-                //- li  Track Livestock.
-                //- li  Google Map APIs implemented using Javascript.
-                //- br
                 h2 TIC TAC TOE | #[span Angular]
                 h3 Link :- https://github.com/CPMaurya/TIC_TAC_TOE
                 li  Two player game.
