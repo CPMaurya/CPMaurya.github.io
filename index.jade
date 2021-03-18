@@ -1,7 +1,3 @@
-// Port of the awesome xetex resume template by Debarghya Das
-// Jade Template
-// Author: Ankit Sultana
-// Original Repo: https://github.com/bk2dcradle/jade-resume
 // LICENSE: GNU GPL v3
 
 doctype html
@@ -9,15 +5,12 @@ html(lang="en")
     head
         title= 'Resume'
         link(href="includes/css/style.css", rel="stylesheet")
-        // Link to the corresponding fonts
-        // Font: Raleway | https://github.com/mrkelly/lato.git
         link(href="includes/fonts/raleway/raleway.css" rel="stylesheet")
-        // Font: Lato | https://github.com/softwaymedical/raleway.git
         link(href="includes/fonts/lato/css/lato.min.css" rel="stylesheet")
     body
         #update-status
             p.
-                Last updated on Nov 30, 2020
+                Last updated on March 10, 2021
 
         .heading
             h1 #{firstName} #{lastName}
@@ -50,10 +43,10 @@ html(lang="en")
                 h4 JULY 2013 - MAY 2014
                 h4 Allahabad, Uttar Pradesh
                 br
-                h2 High School (10th) | Science
-                h3 SIC Allahabad | UP Board
-                h4 JULY 2011 - MAY 2012
-                h4 Allahabad, Uttar Pradesh
+                //- h2 High School (10th) | Science
+                //- h3 SIC Allahabad | UP Board
+                //- h4 JULY 2011 - MAY 2012
+                //- h4 Allahabad, Uttar Pradesh
                 ///////// Begin Section: Links /////////
                 h1 Links
                 br
@@ -67,12 +60,7 @@ html(lang="en")
                 br
                 // Begin Subsection
                 h2 Programming
-                // Use no-overlap if inline list overlaps with any element
-                // above it
                 h4.no-overlap Worked in
-                // Note: Use span with li elements so the bullets can be closer
-                //       than the browser default value. Refer:
-                //       http://stackoverflow.com/questions/4373046/css-control-space-between-bullet-and-li
                 ul
                     - for (var i = 0; i < languagesStrong.length; i++)
                         li
@@ -107,15 +95,10 @@ html(lang="en")
                 h1 Coursework
                 br
                 // Begin Subsection
-                ///h2 Graduate
-                ///- for (var i = 0; i <graduateCourses.length; i++)
-                    ///p= graduateCourses[i]
-
-                // Begin Subsection
-                ///h2 Undergraduate
                 - for (var i = 0; i < undergradCourses.length; i++)
-                    p= undergradCourses[i]
-                    - if (i == 4)
+                    li
+                        span=undergradCourses[i]
+                        - if (i == 4)
                         ///p.italic.bold (Research Asst. & Teaching Asst 2x)
 
 
@@ -135,17 +118,15 @@ html(lang="en")
                 // Begin Subsection
                 h2 MEDDELIVERY | #[span B2B PHARMA SUPPLY CHAIN IN INDIA]
                 h3 Full-time PRODUCT ENGINEER | MAY 2019 - Prasent
-                li  During my job I have work on many feature and still cont..
-                li  Disign and implement the API of highly available data with DRF
-                li  Backend development with Python/Django
-                li  Web APIs with Django REST framework
-                li  Frontend development with Angular
+                li  Worked on many features including Collection Management, Sales Return Process, and autoprocessing of order items.
+                li  Designed and implemented the API of highly available data with DRF.
+                li  Backend development with Python/Django.
+                li  Frontend development with Angular.
 
                 h2 DZONE | #[span Software Training & Service Provider]
-                h3 Summar Training | May 2018 - July 2018
-                li  During training program learn Python/Django and work on multiple project.
-                li  Backend development with Python/Django.
-                li  Django REST framework.
+                h3 Summer Training | May 2018 - July 2018
+                li  During the training program learned Python/Django and worked on multiple projects.
+                li  Created a web app to shorten the URL.
 
                 // Space between subsections, in case if they are too close
 
@@ -155,20 +136,18 @@ html(lang="en")
                 br
                 h2 Criminal Activities Prediction | #[span ML & Python/Django]
                 h3 Aug 2018 - Apr 2019 | College Project | Team of 3
-                li  This project aim to predict patterns of crimes being committed.
+                li  This project aims to predict patterns of crimes being committed.
                 li  The project automating the process of analyzing and visualizing criminal data.
-                li  The data from the project is taken from Boston Police Department criminal report datasets.
+                li  The data from the project is taken from Boston Police Department crime report datasets.
                 br
                 h2 URL Shortener | #[span Python/Django]
                 h3 Link :- https://github.com/CPMaurya/URL-Shortener
-                li  Website to shorten url.
-                li  Built using Python(Django Framework).
+                li  This is a web app to shorten the URL.
                 br
                 h2 Chat Application | #[span Python/Django & Angular]
                 h3 Link :- https://github.com/CPMaurya/Django-Chat
-                li  Real Time Chat with Django Channels.
-                li  Unlike most traditional chat apps.
-                li  This real-time chat application does not save your chat messages in the database before passing it to other client.
+                li  Real-time chat with WebSockets using Django channels
+                li  This real-time chat application does not store your chat messages in the database until it sends the message to the client.
                 br
                 h2 TIC TAC TOE | #[span Angular]
                 h3 Link :- https://github.com/CPMaurya/TIC_TAC_TOE
@@ -177,10 +156,10 @@ html(lang="en")
                 ///////// Begin Section: Awards /////////
                 h1 EXTRA CURRICULAR ACTIVITIES
                 br
-                li Member of “Tech-Innova Club”.
-                li Attended one day workshop on “WEB DEVELOPMENT & PYTHON 3”.
+                //- li Member of “Tech-Innova Club”.
+                //- li Attended one day workshop on “WEB DEVELOPMENT & PYTHON 3”.
                 li Participate of the Microsoft open source project challenge.
-                li Active Participation in SKIT YOUTH RED CROSS CLUB – Blood Donation Camp (2016, 2017)
+                li Active participation in SKIT YOUTH RED CROSS CLUB – Blood Donation Camp (2016, 2017)
 
 
                 h1 STRENGTHS
@@ -190,19 +169,6 @@ html(lang="en")
                 //li Optimistic
                 li Leadership
 
-
-
-                ///////// Begin Section: Publications /////////
-                ///h1 Publications
-                ///ol.publications-list
-                   /// li.
-                       /// #[a(href="#") A. Jain], #[a(href="#") D.Das] and #[a(href="#") A.Saxena]. Planit: A crowdsourcing approach
-                        ///for learning to plan paths from large scale preference
-                        ///feedback. #[span.italic Tech Report, ICRA, in press]
-                    ///li.
-                        ///S. TIlsen, D.Das, and B.McKee. Real-time articulatory
-                        ///biofeedback with electromagnetic articulography.
-                        ///#[span.italic Linguistics Vanguard, in press.]
                 ////////////////////////
                 /// Right Column Ends //
                 ////////////////////////
